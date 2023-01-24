@@ -1,0 +1,31 @@
+{
+  "name": "testWelling5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"yarn run compile\"",
+    "compile": "tsc && node ./dist/index.js"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "@hapi/hapi": "^21.2.0",
+    "@hapi/joi": "^17.1.1",
+    "@types/jsonwebtoken": "^9.0.1",
+    "bcrypt": "^5.1.0",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "pg": "^8.8.0",
+    "pg-native": "^3.0.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.11"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/hapi__hapi": "^21.0.0",
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  }
+}
